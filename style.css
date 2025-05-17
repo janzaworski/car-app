@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#navbar img {
+  height: 40px;
+}
+
+.nav-right {
+  font-size: 1.1rem;
+}
+.hidden {
+  display: none;
+}
+
+#car-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 32px;
+}
+
+.car-info {
+  flex: 1;
+}
+
+.error {
+  color: red;
+}
+
+.car-card {
+  width: 300px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+  padding: 24px;
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: white;
+}
+
+.car-content {
+  padding: 16px;
+}
+
+.car-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #333;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 33px;
+  line-height: normal;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: normal;
+  color: #1967d2;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: normal;
+}
+
+.body-1 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: normal;
+}
+
+.body-2 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: normal;
+}
+
+button.btn-primary {
+  background-color: #1967d2;
+  color: #ffffff;
+  padding: 8px 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: normal;
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#back-btn {
+  border: 2px solid #1967d2;
+  background-color: #ffffff;
+  padding: 8px 24px;
+  border-radius: 80px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #1967d2;
+  line-height: normal;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search {
+  width: 600px;
+  height: 48px;
+  border: 2px solid #1967d2;
+  border-radius: 80px;
+  padding: 0 32px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  display: block;
+  margin: 40px auto;
+}
+
+.price {
+  color: #bcd5f5;
+}
+
+.form-wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.form-left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.form-left img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-right {
+  flex: 1;
+  max-width: 500px;
+}
+
+#owner-name {
+  border: 2px solid #1967d2;
+  border-radius: 80px;
+  padding: 0 32px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zakup Auta</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-left">
+        <img
+          src="https://via.placeholder.com/100x40?text=LOGO"
+          alt="Logo sklepu"
+        />
+      </div>
+      <div class="nav-right">
+        <span>Koszyk: <strong id="nav-total-price">0</strong> zł</span>
+      </div>
+    </nav>
+
+    <div id="app">
+      <div id="car-list-section">
+        <input type="text" id="search" placeholder="Szukaj po marce..." />
+        <div id="car-list"></div>
+      </div>
+
+      <div id="form-section" class="hidden">
+        <div class="form-wrapper">
+          <div class="form-right">
+            <h1><strong id="selected-car-name"></strong></h1>
+            <form id="purchase-form">
+              <p>Formularz zakupu</p>
+              <h2>Imię i nazwisko</h2>
+              <input
+                type="text"
+                id="owner-name"
+                placeholder="Imię i nazwisko"
+                required
+              />
+              <br />
+              <h2>Forma płatności</h2>
+              <label>
+                <input type="radio" name="payment" value="leasing" required />
+                Leasing
+              </label>
+              <label>
+                <input type="radio" name="payment" value="gotówka" /> Gotówka
+              </label>
+              <br />
+              <h2>Data dostarczenia</h2>
+              <select id="delivery-date"></select>
+              <br />
+              <h2>Akcesoria</h2>
+              <div id="accessory-list"></div>
+
+              <p>Całkowita cena: <span id="total-price">0</span> zł</p>
+
+              <button class="btn-primary" type="submit">Zakup</button>
+              <button type="button" id="back-btn">Powrót do wyboru</button>
+
+              <p id="form-error" class="error"></p>
+            </form>
+          </div>
+
+          <div class="form-left">
+            <img id="selected-car-image" src="" alt="Wybrany samochód" />
+          </div>
+        </div>
+      </div>
+
+      <div id="summary-section" class="hidden">
+        <h1>Dziękujemy za zakup!</h1>
+        <p id="summary-text"></p>
+        <img id="summary-img" />
+        <p id="summary-price"></p>
+      </div>
+    </div>
+  </body>
+</html>
